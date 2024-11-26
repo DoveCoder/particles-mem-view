@@ -1,0 +1,14 @@
+use graphics::math::{add, mul_scalar, Vec2d};
+use piston_window::*;
+use rand::prelude::*;
+use std::alloc::{GlobalAlloc, Layout, System};
+use std::time::Instant;
+
+#[global_allocator]
+static ALLOCATOR: ReportingAllocator = ReportingAllocator;
+
+struct ReportingAllocator;
+
+fn main() {
+    println!("Hello, world!");
+}
